@@ -12,7 +12,7 @@ const LoginPage = () => {
         p="0.5rem 3%"
         textAlign="left"
       >
-        <Typography fontWeight="bold" fontSize="32px" color="primary">
+        <Typography fontWeight="bold" fontSize="30px" color="primary">
           syncify
         </Typography>
       </Box>
@@ -29,7 +29,7 @@ const LoginPage = () => {
           variant="h4"
           sx={{ mb: "1.5rem", textAlign: "center" }}
         >
-          welcome to syncify
+          welcome to syncify!
         </Typography>
         <Form />
       </Box>

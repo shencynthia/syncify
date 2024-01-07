@@ -4,7 +4,6 @@ import Navbar from "pages/navbar";
 import UserWidget from "components/widgets/UserWidget";
 import MyPostWidget from "components/widgets/MyPostWidget";
 import PostsWidget from "components/widgets/PostsWiget";
-import CountdownWidget from "components/widgets/CountdownWidget";
 import FriendListWidget from "components/widgets/FriendsListWidget";
 
 const HomePage = () => {
@@ -21,25 +20,17 @@ const HomePage = () => {
         gap="0.5rem"
         justifyContent="space-between"
       >
-        
-        <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
+        <Box flexBasis={isNonMobileScreens ? "25%" : undefined}>
           <UserWidget userId={_id} picturePath={picturePath} />
           <FriendListWidget userId={_id} />
         </Box>
         <Box
-          flexBasis={isNonMobileScreens ? "42%" : undefined}
+          flexBasis={isNonMobileScreens ? "72%" : undefined}
           mt={isNonMobileScreens ? undefined : "2rem"}
         >
           <MyPostWidget picturePath={picturePath} />
           <PostsWidget userId={_id} />
         </Box>
-        {isNonMobileScreens && (
-          <Box flexBasis="26%">
-            <Box m="2rem 0" />
-            <CountdownWidget />
-
-          </Box>
-        )}
       </Box>
     </Box>
   );

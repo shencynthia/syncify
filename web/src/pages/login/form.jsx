@@ -213,7 +213,7 @@ const Form = () => {
               type="submit"
               sx={{
                 m: "2rem 0",
-                p: "1rem",
+                p: "0.5rem",
                 backgroundColor: palette.primary.main,
                 color: palette.background.alt,
                 "&:hover": { color: palette.primary.main },
